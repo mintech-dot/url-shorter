@@ -28,7 +28,7 @@ const Button = ({
       className += "py-3 px-5";
       break;
     case "large":
-      className += " py-4 ";
+      className += " py-[18px] ";
       break;
 
     default:
