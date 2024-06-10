@@ -12,11 +12,11 @@ const Button = ({
   switch (variant) {
     case "primary":
       className +=
-        "md:px-9 text-white bg-brand-primary-blue shadow-lg shadow-brand-primary-blue/30 ";
+        "md:px-9 text-white hidden md:block bg-brand-primary-blue shadow-lg shadow-brand-primary-blue/30 ";
       break;
     case "dark":
       className +=
-        "flex gap-[10px] md:px-6 text-white bg-grey border border-[#353C4A] ";
+        "flex gap-[10px] px-4 md:px-6 text-white bg-grey border border-[#353C4A] ";
       break;
     default:
       className +=
@@ -28,7 +28,7 @@ const Button = ({
       className += "py-3 px-5";
       break;
     case "large":
-      className += " py-[18px] ";
+      className += " py-4 ";
       break;
 
     default:
