@@ -1,4 +1,4 @@
-import Input from "./ui/Input";
+import Input from "./ui/ShorterInput";
 import Table from "./ui/Table";
 const Hero = () => {
   const columns = [

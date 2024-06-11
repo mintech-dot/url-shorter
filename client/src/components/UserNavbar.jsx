@@ -1,6 +1,6 @@
 import Button from "./ui/Button";
 import dropdown from "../assets/icon/dropdown.svg";
-import Input from "./ui/Input";
+import Input from "./ui/ShorterInput";
 const UserNavbar = () => {
   return (
     <nav className="flex pt-6 px-[52px] bg-black/50">
@@ -10,8 +10,8 @@ const UserNavbar = () => {
         </h1>{" "}
         <h1 className="text-lite">®</h1>
       </div>
-      <div >
-      <Input />
+      <div>
+        <Input />
       </div>
       <div className="flex flex-1 justify-end items-end mb-[7px]">
         <Button variant="dark" size="large">
