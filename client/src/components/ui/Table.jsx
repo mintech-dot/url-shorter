@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import copy from "../../assets/icon/copy.svg";
 import activelink from "../../assets/icon/active-link.svg";
 import inactivelink from "../../assets/icon/inactive-link.svg";
+import editIcon from "../../assets/icon/edit.svg";
+import deleteIcon from "../../assets/icon/delete.svg";
 // src/components/Table.js
 
 const Table = ({ columns, data }) => {
@@ -32,7 +34,11 @@ const Table = ({ columns, data }) => {
                   {column.accessor === "link" ? (
                     <div className="flex items-center  ">
                       {row[column.accessor]}{" "}
-                      <img src={copy} alt="copy icon" className="ml-3 cursor-pointer" />
+                      <img
+                        src={copy}
+                        alt="copy icon"
+                        className="ml-3 cursor-pointer"
+                      />
                     </div>
                   ) : column.accessor === "status" &&
                     row[column.accessor] === "active" ? (
@@ -52,6 +58,20 @@ const Table = ({ columns, data }) => {
                         src={inactivelink}
                         alt="copy icon"
                         className="ml-3 cursor-pointer"
+                      />
+                    </div>
+                  ) : column.accessor === "action" ? (
+                    <div className="flex items-start  ">
+                      {row[column.accessor]}{" "}
+                      <img
+                        src={deleteIcon}
+                        alt="delete icon"
+                        className=" cursor-pointer"
+                      />
+                      <img
+                        src={editIcon}
+                        alt="edit icon"
+                        className=" cursor-pointer mr-24 "
                       />
                     </div>
                   ) : (
