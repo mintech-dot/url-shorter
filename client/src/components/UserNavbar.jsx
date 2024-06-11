@@ -3,7 +3,7 @@ import dropdown from "../assets/icon/dropdown.svg";
 import Input from "./ui/Input";
 const UserNavbar = () => {
   return (
-    <nav className="flex pt-6 px-[52px]">
+    <nav className="flex pt-6 px-[52px] bg-black/50">
       <div className="flex flex-1 pt-[7px]">
         <h1 className=" text-[37px] font-extrabold bg-gradient-to-r from-brand-primary-pink to-brand-primary-blue bg-clip-text text-transparent">
           Linkly
