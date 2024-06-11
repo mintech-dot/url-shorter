@@ -1,16 +1,10 @@
+import { Link } from 'react-router-dom';
 import InputField from '../../components/ui/InputField';
-
+import Linkly from '../../components/ui/Linkly-logo';
 const Register = () => {
   return (
     <>
-      <nav className="pt-6 px-[52px]">
-        <div className="flex flex-1">
-          <h1 className="text-[37px] font-extrabold bg-gradient-to-r from-brand-primary-pink to-brand-primary-blue bg-clip-text text-transparent">
-            Linkly
-          </h1>
-          <h1 className="text-lite">®</h1>
-        </div>
-      </nav>
+      <Linkly />
 
       <section className="flex mx-auto max-w-sm my-8 items-center justify-center bg-grey/90 shadow-3xl rounded-lg border border-grey">
         <div className="p-8">
@@ -59,9 +53,11 @@ const Register = () => {
             <div className="text-center">
               <p className="text-sm font-medium text-lite">
                 Already have an account?{' '}
-                <a href="/login" className="text-lite inline-block font-bold text-sm underline">
+                <Link to="/login">
+                <h1 className="text-lite inline-block font-bold text-sm underline">
                   Login in
-                </a>
+                </h1>
+                </Link>
               </p>
             </div>
           </form>

@@ -1,15 +1,10 @@
 import InputField from "../../components/ui/InputField";
+import { Link } from "react-router-dom";
+import Linkly from "../../components/ui/Linkly-logo";
 const ResetPassword = () => {
   return (
     <>
-      <nav className=" pt-6 px-[52px]">
-        <div className="flex flex-1">
-          <h1 className="text-[37px] font-extrabold bg-gradient-to-r from-brand-primary-pink to-brand-primary-blue bg-clip-text text-transparent">
-            Linkly
-          </h1>{" "}
-          <h1 className="text-lite">®</h1>
-        </div>
-      </nav>
+      <Linkly />
       <section className="flex  mx-auto max-w-sm my-32 items-center justify-center bg-grey/90 shadow-3xl  rounded-lg border border-grey ">
         <div className="p-6 ">
           <h1 className=" text-2xl text-lite font-semibold text-center">
@@ -28,17 +23,20 @@ const ResetPassword = () => {
               required
             />
             </div>
-
+            <Link to="/verify-email">
             <button className="bg-brand-primary-blue mx-auto  mb-4 flex items-center justify-center text-white text-md rounded-lg w-full py-2.5">
               Continue
             </button>
+            </Link>
 
             <div className="text-center">
               <p className="text-sm font-medium text-lite">
                 Dont have an account?{" "}
+                <Link to="/register">
                 <a className="text-lite inline-block font-bold text-sm underline pl-2">
                   Sign Up
                 </a>
+                </Link>
               </p>
             </div>
           </form>
