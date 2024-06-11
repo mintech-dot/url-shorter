@@ -1,6 +1,7 @@
 import UserNavbar from "../../components/UserNavbar";
 import Tap from "../../components/ui/Tap";
 import Table from "../../components/ui/Table";
+import Profile from "../../components/Profile";
 const Dashboard = () => {
   const columns = [
     { header: "ID", accessor: "id" },
@@ -61,10 +62,10 @@ const Dashboard = () => {
       <UserNavbar />
       <Tap />
       <div>
-        <div className="container mx-auto py-[60px]">
-          <Table columns={columns} data={data} />
-        </div>
+        <Profile />
+        <Table columns={columns} data={data} />
       </div>
+
     </div>
   );
 };

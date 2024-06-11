@@ -1,3 +1,4 @@
+import InputField from "../../components/ui/InputField";
 const ResetPassword = () => {
   return (
     <>
@@ -19,16 +20,16 @@ const ResetPassword = () => {
             send you a link to reset your password.{" "}
           </h2>
           <form action="">
-            <div className="pb-2">
-              <input
-                type="text"
-                className="mx-auto px-2.5 py-2.5 w-full border border-lite rounded-lg mt-2 "
-                placeholder="m@example.com"
-                required
-              />
+            <div >
+            <InputField
+              type="email"
+              id="email"
+              placeholder="m@example.com"
+              required
+            />
             </div>
 
-            <button className="bg-brand-primary-blue mx-auto my-2 mb-4 flex items-center justify-center text-white text-md rounded-lg w-full py-2.5">
+            <button className="bg-brand-primary-blue mx-auto  mb-4 flex items-center justify-center text-white text-md rounded-lg w-full py-2.5">
               Continue
             </button>
 

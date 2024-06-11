@@ -1,3 +1,5 @@
+import InputField from "../../components/ui/InputField";
+
 const Login = () => {
   return (
     <>
@@ -17,12 +19,10 @@ const Login = () => {
           </h2>
           <form action="">
             <div className="pb-2">
-              <label className="text-sm font-medium text-lite" htmlFor="Email">
-                Email
-              </label>
-              <input
-                type="text"
-                className="mx-auto px-2.5 py-2.5 w-full border border-lite rounded-lg mt-2 mb-4"
+              <InputField
+                label="Email"
+                type="email"
+                id="email"
                 placeholder="m@example.com"
                 required
               />
@@ -40,10 +40,10 @@ const Login = () => {
                   Forgot your password?
                 </a>
               </div>
-              <input
+              <InputField
                 type="password"
-                className="mx-auto px-2.5 py-2.5 w-full border border-lite rounded-lg mt-2 mb-4"
-                placeholder=""
+                id="password"
+                placeholder="enter your password"
                 required
               />
             </div>
