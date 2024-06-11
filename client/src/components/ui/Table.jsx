@@ -32,7 +32,7 @@ const Table = ({ columns, data }) => {
                   {column.accessor === "link" ? (
                     <div className="flex items-center  ">
                       {row[column.accessor]}{" "}
-                      <img src={copy} alt="copy icon" className="ml-3" />
+                      <img src={copy} alt="copy icon" className="ml-3 cursor-pointer" />
                     </div>
                   ) : column.accessor === "status" &&
                     row[column.accessor] === "active" ? (
@@ -41,7 +41,7 @@ const Table = ({ columns, data }) => {
                       <img
                         src={activelink}
                         alt="copy icon"
-                        className="ml-[24px] "
+                        className="ml-[24px] cursor-pointer"
                       />
                     </div>
                   ) : column.accessor === "status" &&
@@ -51,7 +51,7 @@ const Table = ({ columns, data }) => {
                       <img
                         src={inactivelink}
                         alt="copy icon"
-                        className="ml-3"
+                        className="ml-3 cursor-pointer"
                       />
                     </div>
                   ) : (
