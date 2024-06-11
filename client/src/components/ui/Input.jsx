@@ -6,7 +6,7 @@ const Input = () => {
       <img src={link} alt="link icon" className="pl-5" />
       <input
         type="text"
-        className="bg-grey rounded-[48px] w-[600px] py-[18px] placeholder:text-[#C9CED6] font-light placeholder:font-light px-[20px]"
+        className="bg-grey focus:outline-none focus:ring-0 w-[450px] hover:border-transparent py-[18px] placeholder:text-[#C9CED6] font-light text-lite placeholder:font-light px-[20px]"
         placeholder="Enter the link here"
       />
       <Button variant="primary">Shorten Now!</Button>

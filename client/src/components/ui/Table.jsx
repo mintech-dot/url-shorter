@@ -1,0 +1,75 @@
+import PropTypes from "prop-types";
+import copy from "../../assets/icon/copy.svg";
+import activelink from "../../assets/icon/active-link.svg";
+import inactivelink from "../../assets/icon/inactive-link.svg";
+// src/components/Table.js
+
+const Table = ({ columns, data }) => {
+  return (
+    <div className="overflow-x-auto mx-[153px] rounded-lg ">
+      <table className="min-w-full divide-y divide-grey  shadow-xl">
+        <thead className="bg-grey ">
+          <tr>
+            {columns.map((column) => (
+              <th
+                key={column.accessor}
+                scope="col"
+                className="px-6 py-3 text-left text-[15px] font-bold text-lite "
+              >
+                {column.header}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody className="bg-black/90  divide-y-4 divide-grey ">
+          {data.map((row, rowIndex) => (
+            <tr key={rowIndex}>
+              {columns.map((column) => (
+                <td
+                  key={column.accessor}
+                  className="px-6 py-[14px] whitespace-nowrap text-sm text-lite"
+                >
+                  {column.accessor === "link" ? (
+                    <div className="flex items-center  ">
+                      {row[column.accessor]}{" "}
+                      <img src={copy} alt="copy icon" className="ml-3" />
+                    </div>
+                  ) : column.accessor === "status" &&
+                    row[column.accessor] === "active" ? (
+                    <div className="flex items-center text-[#1EB036]  ">
+                      {row[column.accessor]}{" "}
+                      <img
+                        src={activelink}
+                        alt="copy icon"
+                        className="ml-[24px] "
+                      />
+                    </div>
+                  ) : column.accessor === "status" &&
+                    row[column.accessor] === "inactive" ? (
+                    <div className="flex items-center text-[#B0901E]  ">
+                      {row[column.accessor]}{" "}
+                      <img
+                        src={inactivelink}
+                        alt="copy icon"
+                        className="ml-3"
+                      />
+                    </div>
+                  ) : (
+                    row[column.accessor]
+                  )}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+Table.propTypes = {
+  columns: PropTypes.array.isRequired,
+  data: PropTypes.array.isRequired,
+};
+
+export default Table;
