@@ -44,11 +44,11 @@ const Login = () => {
               />
             </div>
             <Link to="/dashboard">
-            <button className="bg-brand-primary-blue mx-auto my-4 flex items-center justify-center text-white text-md rounded-lg w-full py-2.5">
+            <button type="submit" className="bg-brand-primary-blue hover:bg-brand-primary-blue/75 mx-auto my-4 flex items-center justify-center text-white text-md rounded-lg w-full py-2.5">
               Login
             </button>
             </Link>
-            <button className=" mx-auto mb-4 flex items-center justify-center text-white bg-grey border border-[#353C4A] hover:bg-[#353C4A] text-md rounded-lg w-full py-2.5">
+            <button type="submit" className=" mx-auto mb-4 flex items-center justify-center text-white bg-grey border border-[#353C4A] hover:bg-[#353C4A] text-md rounded-lg w-full py-2.5">
               Login with Google
             </button>
 

@@ -16,7 +16,7 @@ const VerifyEmail = () => {
             </h2>
             
             <Link to="/login">
-              <button className="bg-brand-primary-blue mx-auto my-2 mb-4 flex items-center justify-center text-white font-bold text-md rounded-lg w-full py-2.5">
+              <button type="submit" className="bg-brand-primary-blue hover:bg-brand-primary-blue/75 mx-auto my-2 mb-4 flex items-center justify-center text-white font-bold text-md rounded-lg w-full py-2.5">
                 Skip now
               </button>
             </Link>

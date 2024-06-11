@@ -24,7 +24,7 @@ const ResetPassword = () => {
             />
             </div>
             <Link to="/verify-email">
-            <button className="bg-brand-primary-blue mx-auto  mb-4 flex items-center justify-center text-white text-md rounded-lg w-full py-2.5">
+            <button type="submit" className="bg-brand-primary-blue mx-auto hover:bg-brand-primary-blue/75 mb-4 flex items-center justify-center text-white text-md rounded-lg w-full py-2.5">
               Continue
             </button>
             </Link>
