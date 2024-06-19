@@ -12,7 +12,7 @@ const Button = ({
   switch (variant) {
     case "primary":
       className +=
-        "md:px-9 text-white hidden md:block bg-brand-primary-blue hover:bg-brand-primary-blue/75 shadow-lg shadow-brand-primary-blue/30 ";
+        "md:px-9 text-white md:block bg-brand-primary-blue hover:bg-brand-primary-blue/75 shadow-lg shadow-brand-primary-blue/30 ";
       break;
     case "dark":
       className +=
