@@ -53,26 +53,26 @@ const Hero = () => {
     },
   ];
   return (
-    <section className="text-center pt-[130px] ">
+    <section className="text-center pt-[65px] md:pt-[130px]  ">
       <div className="flex flex-col items-center">
-        <h1 className="text-center font-inter font-extrabold text-[60px] leading-80  bg-gradient-to-r from-brand-primary-blue from-0% via-brand-primary-pink via-19%  to-brand-primary-blue to-100% bg-clip-text text-transparent">
+        <h1 className="text-center font-inter font-extrabold text-[35px] md:text-[45px] lg:text-[60px] leading-[40px] md:leading-[60px]  bg-gradient-to-r from-brand-primary-blue from-0% via-brand-primary-pink via-19%  to-brand-primary-blue to-100% bg-clip-text text-transparent">
           Shorten Your Loooong Links :)
         </h1>
 
-        <p className="pt-[20px] pb-[40px]  text-center font-inter font-light text-[16px] leading-[26px] w-[650px] text-lite">
+        <p className="pt-[20px] pb-[24px] md:pb-[40px]  text-center font-inter font-light text-[16px] leading-[26px] mx-[20px] md:w-[650px] text-lite">
           Linkly is an efficient and easy-to-use URL shortening service that
           streamlines your online experience.
         </p>
       </div>
 
-      <div className="grid place-items-center ">
+      <div className="grid place-items-center mx-4">
         <Input />
-        <p className=" pt-[8px] text-center font-inter font-light text-[14px] leading-[26px] w-[650px] text-lite">
+        <p className=" pt-[8px]  text-center font-inter font-light text-[14px] leading-[26px] mx-[20px] md:w-[650px] text-lite">
           You can create unlimited links. Register Now to enjoy Unlimited usage
         </p>
       </div>
 
-      <div className="container mx-auto py-[60px]">
+      <div className="container mx-auto py-[40px] md:py-[60px] ">
         <Table columns={columns} data={data} />
       </div>
     </section>
