@@ -8,7 +8,7 @@ import deleteIcon from "../../assets/icon/delete.svg";
 
 const Table = ({ columns, data }) => {
   return (
-    <div className="overflow-x-auto mx-[153px] rounded-lg ">
+    <div className="overflow-x-auto mx-[26px] xl:mx-[153px] rounded-lg ">
       <table className="min-w-full divide-y divide-grey  shadow-xl">
         <thead className="bg-grey ">
           <tr>
