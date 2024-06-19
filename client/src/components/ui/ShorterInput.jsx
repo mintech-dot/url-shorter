@@ -30,7 +30,7 @@ const Input = () => {
       <img src={link} alt="link icon" className="pl-5 cursor-pointer" />
       <input
         type="text"
-        className="bg-grey focus:outline-none focus:ring-0 w-[195px] md:w-[450px] hover:border-transparent py-[18px] placeholder:text-[#C9CED6] font-light text-lite placeholder:font-light px-[4px] md:px-[20px]"
+        className="bg-grey focus:outline-none focus:ring-0 w-[195px] md:w-[450px] hover:border-transparent py-[18px] placeholder:text-[#C9CED6] font-light text-lite placeholder:font-light px-[8px] md:px-[20px]"
         placeholder="Enter the link here"
       />
       <Button variant="primary">{buttonText}</Button>
