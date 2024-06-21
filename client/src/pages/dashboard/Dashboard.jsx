@@ -60,7 +60,7 @@ const Dashboard = () => {
     <div>
       <UserNavbar />
       <Tap />
-      <div className="grid place-items-center m-8 lg:hidden">
+      <div className="grid place-items-center m-6 lg:hidden">
         <ShorterInput />
       </div>
       <div className="md:py-14">
