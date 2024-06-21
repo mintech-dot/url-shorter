@@ -1,11 +1,9 @@
 import PropTypes from "prop-types";
-import copy from "../../assets/icon/copy.svg";
 import activelink from "../../assets/icon/active-link.svg";
 import inactivelink from "../../assets/icon/inactive-link.svg";
 import editIcon from "../../assets/icon/edit.svg";
 import deleteIcon from "../../assets/icon/delete.svg";
-// src/components/Table.js
-
+import CopyTextButton from "./CopyTextButton";
 const Table = ({ columns, data }) => {
   return (
     <div className="overflow-x-auto mx-[26px] xl:mx-[153px] rounded-lg ">
@@ -34,11 +32,7 @@ const Table = ({ columns, data }) => {
                   {column.accessor === "link" ? (
                     <div className="flex items-center  ">
                       {row[column.accessor]}{" "}
-                      <img
-                        src={copy}
-                        alt="copy icon"
-                        className="ml-3 cursor-pointer"
-                      />
+                      <CopyTextButton text={row[column.accessor]} />
                     </div>
                   ) : column.accessor === "status" &&
                     row[column.accessor] === "active" ? (
@@ -46,7 +40,7 @@ const Table = ({ columns, data }) => {
                       {row[column.accessor]}{" "}
                       <img
                         src={activelink}
-                        alt="copy icon"
+                        alt="active icon"
                         className="ml-[24px] cursor-pointer"
                       />
                     </div>
@@ -56,7 +50,7 @@ const Table = ({ columns, data }) => {
                       {row[column.accessor]}{" "}
                       <img
                         src={inactivelink}
-                        alt="copy icon"
+                        alt="inactive icon"
                         className="ml-3 cursor-pointer"
                       />
                     </div>
