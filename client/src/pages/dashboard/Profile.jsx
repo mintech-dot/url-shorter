@@ -6,7 +6,8 @@ const Profile = () => {
     <>
       <UserNavbar />
       <Tap />
-      <section className="flex  mx-auto max-w-md my-8 items-center justify-center bg-grey/90 shadow-3xl  rounded-xl border border-grey ">
+      <section className="flex items-center justify-center">
+      <div className="flex m-[26px] max-w-md my-8 items-center justify-center bg-grey/90 shadow-3xl  rounded-xl border border-grey ">
         <div className="p-8 ">
           <h1 className=" text-2xl text-lite font-semibold text-center">
             Sobhi Raid
@@ -49,6 +50,7 @@ const Profile = () => {
             </button>
           </form>
         </div>
+      </div>
       </section>
     </>
   );

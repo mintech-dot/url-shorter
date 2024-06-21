@@ -4,7 +4,7 @@ import Input from "./ui/ShorterInput";
 import { Link } from 'react-router-dom';
 const UserNavbar = () => {
   return (
-    <nav className="flex pt-6 px-[52px] bg-black/50">
+    <nav className="flex pt-6 xl:px-[52px] px-[26px] md:px-[52px] bg-black/50">
       <div className="flex flex-1 pt-[7px]">
         <Link to="/">
         <h1 className=" text-[37px] font-extrabold bg-gradient-to-r from-brand-primary-pink to-brand-primary-blue bg-clip-text text-transparent">
@@ -13,7 +13,7 @@ const UserNavbar = () => {
         </Link>
         <h1 className="text-lite">®</h1>
       </div>
-      <div>
+      <div className="hidden lg:block">
         <Input />
       </div>
       <div className="flex flex-1 justify-end items-end mb-[7px]">

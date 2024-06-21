@@ -5,7 +5,8 @@ const ResetPassword = () => {
   return (
     <>
       <Linkly />
-      <section className="flex  mx-auto max-w-sm my-32 items-center justify-center bg-grey/90 shadow-3xl  rounded-lg border border-grey ">
+      <section className="flex items-center justify-center">
+      <div className="flex  mx-[26px] max-w-sm my-32 items-center justify-center bg-grey/90 shadow-3xl  rounded-lg border border-grey ">
         <div className="p-6 ">
           <h1 className=" text-2xl text-lite font-semibold text-center">
             Reset your password
@@ -41,6 +42,7 @@ const ResetPassword = () => {
             </div>
           </form>
         </div>
+      </div>
       </section>
     </>
   );

@@ -1,6 +1,7 @@
 import UserNavbar from "../../components/UserNavbar";
 import Tap from "../../components/ui/Tap";
 import Table from "../../components/ui/Table";
+import ShorterInput from "../../components/ui/ShorterInput"
 const Dashboard = () => {
   const columns = [
     { header: "ID", accessor: "id" },
@@ -59,7 +60,10 @@ const Dashboard = () => {
     <div>
       <UserNavbar />
       <Tap />
-      <div className="py-14">
+      <div className="grid place-items-center m-8 lg:hidden">
+        <ShorterInput />
+      </div>
+      <div className="md:py-14">
         <Table columns={columns} data={data} />
       </div>
     </div>

@@ -55,7 +55,7 @@ const Hero = () => {
   return (
     <section className="text-center pt-[65px] md:pt-[130px]  ">
       <div className="flex flex-col items-center">
-        <h1 className="text-center font-inter font-extrabold text-[35px] md:text-[45px] lg:text-[60px] leading-[40px] md:leading-[60px]  bg-gradient-to-r from-brand-primary-blue from-0% via-brand-primary-pink via-19%  to-brand-primary-blue to-100% bg-clip-text text-transparent">
+        <h1 className="py-2 text-center font-inter font-extrabold text-[35px] md:text-[45px] lg:text-[60px] leading-[40px] md:leading-[60px]  bg-gradient-to-r from-brand-primary-blue from-0% via-brand-primary-pink via-19%  to-brand-primary-blue to-100% bg-clip-text text-transparent">
           Shorten Your Loooong Links :)
         </h1>
 
